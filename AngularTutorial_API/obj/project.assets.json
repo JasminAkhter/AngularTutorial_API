@@ -8035,23 +8035,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jara\\.nuget\\packages\\": {},
+    "C:\\Users\\Support-PC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\AngularTutorial_API-20251010T143134Z-1-001\\AngularTutorial_API\\AngularTutorial_API\\AngularTutorial_API.csproj",
+      "projectUniqueName": "D:\\AngularTutorial_API\\AngularTutorial_API\\AngularTutorial_API.csproj",
       "projectName": "AngularTutorial_API",
-      "projectPath": "E:\\AngularTutorial_API-20251010T143134Z-1-001\\AngularTutorial_API\\AngularTutorial_API\\AngularTutorial_API.csproj",
-      "packagesPath": "C:\\Users\\Jara\\.nuget\\packages\\",
-      "outputPath": "E:\\AngularTutorial_API-20251010T143134Z-1-001\\AngularTutorial_API\\AngularTutorial_API\\obj\\",
+      "projectPath": "D:\\AngularTutorial_API\\AngularTutorial_API\\AngularTutorial_API.csproj",
+      "packagesPath": "C:\\Users\\Support-PC\\.nuget\\packages\\",
+      "outputPath": "D:\\AngularTutorial_API\\AngularTutorial_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Support-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8060,7 +8060,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8141,7 +8140,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

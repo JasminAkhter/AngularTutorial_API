@@ -522,3 +522,4 @@ E:\AngularTutorial_API-20251010T143134Z-1-001\AngularTutorial_API\AngularTutoria
 E:\AngularTutorial_API-20251010T143134Z-1-001\AngularTutorial_API\AngularTutorial_API\obj\Debug\net8.0\AngularTutorial_API.pdb
 E:\AngularTutorial_API-20251010T143134Z-1-001\AngularTutorial_API\AngularTutorial_API\obj\Debug\net8.0\AngularTutorial_API.genruntimeconfig.cache
 E:\AngularTutorial_API-20251010T143134Z-1-001\AngularTutorial_API\AngularTutorial_API\obj\Debug\net8.0\ref\AngularTutorial_API.dll
+D:\AngularTutorial_API\AngularTutorial_API\obj\Debug\net8.0\AngularTutorial_API.sourcelink.json
