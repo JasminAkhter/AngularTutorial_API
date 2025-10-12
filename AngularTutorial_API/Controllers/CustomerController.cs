@@ -73,7 +73,7 @@ namespace AngularTutorial_API.Controllers
         }
 
 
-        [HttpPost]
+        [HttpPost("Create")]
         public async Task<IActionResult> Create([FromBody] CustomerDto model)
         {
             await _context.Database.BeginTransactionAsync();

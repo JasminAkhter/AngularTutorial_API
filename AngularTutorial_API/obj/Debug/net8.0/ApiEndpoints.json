@@ -11,22 +11,6 @@
   },
   {
     "ContainingType": "AngularTutorial_API.Controllers.CustomerController",
-    "Method": "Create",
-    "RelativePath": "api/Customer",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "CustomerDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AngularTutorial_API.Controllers.CustomerController",
     "Method": "GetByID",
     "RelativePath": "api/Customer/{id}",
     "HttpMethod": "GET",
@@ -73,6 +57,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AngularTutorial_API.Controllers.CustomerController",
+    "Method": "Create",
+    "RelativePath": "api/Customer/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CustomerDto",
         "IsRequired": true
       }
     ],
