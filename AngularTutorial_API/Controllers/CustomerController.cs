@@ -88,16 +88,16 @@ namespace AngularTutorial_API.Controllers
                 entity.Name = model.Name;
                 entity.Email = model.Email;
                 entity.Phone = model.Phone;
-                entity.Email = model.Email;
                 entity.Gender = model.Gender;
                 entity.Address = model.Address;
+
 
                 await _context.Customers.AddAsync(entity);
                 await _context.SaveChangesAsync();
 
                 await _context.Database.CommitTransactionAsync();
 
-                return Ok("Data Save Successfully!!");
+                return Ok(entity);
             }
             catch (Exception ex)
             {
