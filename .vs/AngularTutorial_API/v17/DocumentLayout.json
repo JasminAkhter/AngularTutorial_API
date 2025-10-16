@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "D:\\AngularTutorial_API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|solutionrelative:angulartutorial_api\\controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|solutionrelative:angulartutorial_api\\models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\dtos\\bankdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|solutionrelative:angulartutorial_api\\dtos\\bankdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\migrations\\20251016051008_addbankclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|solutionrelative:angulartutorial_api\\migrations\\20251016051008_addbankclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|solutionrelative:angulartutorial_api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|solutionrelative:angulartutorial_api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|solutionrelative:angulartutorial_api\\dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|solutionrelative:angulartutorial_api\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|solutionrelative:angulartutorial_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|solutionrelative:angulartutorial_api\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|solutionrelative:angulartutorial_api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2FBA6FC5-59CF-432F-8515-E6F1DAB08A34}|AngularTutorial_API\\AngularTutorial_API.csproj|d:\\angulartutorial_api\\angulartutorial_api\\angulartutorial_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -42,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 352,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,31 +66,68 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20251016051008_addBankClass.cs",
+              "DocumentMoniker": "D:\\AngularTutorial_API\\AngularTutorial_API\\Migrations\\20251016051008_addBankClass.cs",
+              "RelativeDocumentMoniker": "AngularTutorial_API\\Migrations\\20251016051008_addBankClass.cs",
+              "ToolTip": "D:\\AngularTutorial_API\\AngularTutorial_API\\Migrations\\20251016051008_addBankClass.cs",
+              "RelativeToolTip": "AngularTutorial_API\\Migrations\\20251016051008_addBankClass.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T05:10:08.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BankController.cs",
+              "DocumentMoniker": "D:\\AngularTutorial_API\\AngularTutorial_API\\Controllers\\BankController.cs",
+              "RelativeDocumentMoniker": "AngularTutorial_API\\Controllers\\BankController.cs",
+              "ToolTip": "D:\\AngularTutorial_API\\AngularTutorial_API\\Controllers\\BankController.cs",
+              "RelativeToolTip": "AngularTutorial_API\\Controllers\\BankController.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAwwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T04:37:48.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BankDto.cs",
+              "DocumentMoniker": "D:\\AngularTutorial_API\\AngularTutorial_API\\DTOs\\BankDto.cs",
+              "RelativeDocumentMoniker": "AngularTutorial_API\\DTOs\\BankDto.cs",
+              "ToolTip": "D:\\AngularTutorial_API\\AngularTutorial_API\\DTOs\\BankDto.cs",
+              "RelativeToolTip": "AngularTutorial_API\\DTOs\\BankDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T03:59:43.912Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "D:\\AngularTutorial_API\\AngularTutorial_API\\Models\\Bank.cs",
+              "RelativeDocumentMoniker": "AngularTutorial_API\\Models\\Bank.cs",
+              "ToolTip": "D:\\AngularTutorial_API\\AngularTutorial_API\\Models\\Bank.cs",
+              "RelativeToolTip": "AngularTutorial_API\\Models\\Bank.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:54:10.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CustomerDto.cs",
               "DocumentMoniker": "D:\\AngularTutorial_API\\AngularTutorial_API\\DTOs\\CustomerDto.cs",
               "RelativeDocumentMoniker": "AngularTutorial_API\\DTOs\\CustomerDto.cs",
               "ToolTip": "D:\\AngularTutorial_API\\AngularTutorial_API\\DTOs\\CustomerDto.cs",
               "RelativeToolTip": "AngularTutorial_API\\DTOs\\CustomerDto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-10T16:04:22.393Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\AngularTutorial_API\\AngularTutorial_API\\Program.cs",
-              "RelativeDocumentMoniker": "AngularTutorial_API\\Program.cs",
-              "ToolTip": "D:\\AngularTutorial_API\\AngularTutorial_API\\Program.cs",
-              "RelativeToolTip": "AngularTutorial_API\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T09:47:34.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\AngularTutorial_API\\AngularTutorial_API\\appsettings.json",
               "RelativeDocumentMoniker": "AngularTutorial_API\\appsettings.json",
@@ -92,38 +145,49 @@
               "RelativeDocumentMoniker": "AngularTutorial_API\\Models\\AppDbContext.cs",
               "ToolTip": "D:\\AngularTutorial_API\\AngularTutorial_API\\Models\\AppDbContext.cs",
               "RelativeToolTip": "AngularTutorial_API\\Models\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T09:37:03.235Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Customer.cs",
               "DocumentMoniker": "D:\\AngularTutorial_API\\AngularTutorial_API\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "AngularTutorial_API\\Models\\Customer.cs",
               "ToolTip": "D:\\AngularTutorial_API\\AngularTutorial_API\\Models\\Customer.cs",
               "RelativeToolTip": "AngularTutorial_API\\Models\\Customer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T09:28:42.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "D:\\AngularTutorial_API\\AngularTutorial_API\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "AngularTutorial_API\\Controllers\\CustomerController.cs",
               "ToolTip": "D:\\AngularTutorial_API\\AngularTutorial_API\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "AngularTutorial_API\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAIwFsAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwKoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T09:54:22.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T09:54:22.977Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\AngularTutorial_API\\AngularTutorial_API\\Program.cs",
+              "RelativeDocumentMoniker": "AngularTutorial_API\\Program.cs",
+              "ToolTip": "D:\\AngularTutorial_API\\AngularTutorial_API\\Program.cs",
+              "RelativeToolTip": "AngularTutorial_API\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T09:47:34.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "20251008095040_Init.cs",
               "DocumentMoniker": "D:\\AngularTutorial_API\\AngularTutorial_API\\Migrations\\20251008095040_Init.cs",
               "RelativeDocumentMoniker": "AngularTutorial_API\\Migrations\\20251008095040_Init.cs",
@@ -135,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "AngularTutorial_API.csproj",
               "DocumentMoniker": "D:\\AngularTutorial_API\\AngularTutorial_API\\AngularTutorial_API.csproj",
               "RelativeDocumentMoniker": "AngularTutorial_API\\AngularTutorial_API.csproj",

@@ -12,5 +12,6 @@ namespace AngularTutorial_API.Models
         {
         }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Bank> Banks { get; set; }
     }
 }
