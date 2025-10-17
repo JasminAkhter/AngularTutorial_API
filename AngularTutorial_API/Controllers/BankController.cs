@@ -17,7 +17,7 @@ namespace AngularTutorial_API.Controllers
             _context = context;
         }
 
-        [HttpGet]
+        [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll()
         {
             try
@@ -28,7 +28,6 @@ namespace AngularTutorial_API.Controllers
                 {
                     BankID = x.BankID,
                     BankName = x.BankName,
-                    BranchName = x.BranchName,
                     AccountNumber = x.AccountNumber,
                     AccountType = x.AccountType,
                     BankAddress = x.BankAddress
@@ -56,7 +55,6 @@ namespace AngularTutorial_API.Controllers
                 {
                     BankID = bank.BankID,
                     BankName = bank.BankName,
-                    BranchName = bank.BranchName,
                     AccountNumber = bank.AccountNumber,
                     AccountType = bank.AccountType,
                     BankAddress = bank.BankAddress
@@ -83,7 +81,6 @@ namespace AngularTutorial_API.Controllers
                 Bank entity = new Bank
                 {
                     BankName = model.BankName,
-                    BranchName = model.BranchName,
                     AccountNumber = model.AccountNumber,
                     AccountType = model.AccountType,
                     BankAddress = model.BankAddress
@@ -119,7 +116,6 @@ namespace AngularTutorial_API.Controllers
                     return NotFound(new { Message = "Bank not found." });
 
                 existingBank.BankName = model.BankName;
-                existingBank.BranchName = model.BranchName;
                 existingBank.AccountNumber = model.AccountNumber;
                 existingBank.AccountType = model.AccountType;
                 existingBank.BankAddress = model.BankAddress;

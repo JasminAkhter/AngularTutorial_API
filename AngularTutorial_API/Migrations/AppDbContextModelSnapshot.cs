@@ -43,10 +43,6 @@ namespace AngularTutorial_API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("BranchName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("BankID");
 
                     b.ToTable("Banks");

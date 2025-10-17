@@ -304,8 +304,7 @@
       "BankDto": {
         "required": [
           "accountNumber",
-          "bankName",
-          "branchName"
+          "bankName"
         ],
         "type": "object",
         "properties": {
@@ -314,11 +313,6 @@
             "format": "int32"
           },
           "bankName": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
-          },
-          "branchName": {
             "maxLength": 100,
             "minLength": 0,
             "type": "string"

@@ -8,7 +8,6 @@ namespace AngularTutorial_API.Models
         [Key, DatabaseGenerated (DatabaseGeneratedOption.Identity)]
         public int BankID { get; set; }
         public string BankName { get; set; }
-        public string BranchName { get; set; }
         public string AccountNumber { get; set; }
         public string? AccountType { get; set; }
         public string? BankAddress { get; set; }

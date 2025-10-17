@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AngularTutorial_API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251016051008_addBankClass")]
-    partial class addBankClass
+    [Migration("20251017125845_AddBank")]
+    partial class AddBank
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,10 +43,6 @@ namespace AngularTutorial_API.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("BankName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("BranchName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
