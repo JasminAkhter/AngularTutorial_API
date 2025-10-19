@@ -1,16 +1,6 @@
 [
   {
     "ContainingType": "AngularTutorial_API.Controllers.BankController",
-    "Method": "GetAll",
-    "RelativePath": "api/Bank",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AngularTutorial_API.Controllers.BankController",
     "Method": "GetByID",
     "RelativePath": "api/Bank/{id}",
     "HttpMethod": "GET",
@@ -76,6 +66,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AngularTutorial_API.Controllers.BankController",
+    "Method": "GetAll",
+    "RelativePath": "api/Bank/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

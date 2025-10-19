@@ -16,12 +16,27 @@ namespace AngularTutorial_API.Controllers
             _context = context;
         }
 
+        // There have two types of pagination. Offset pagination and Keyset pagination.
+        // We are doing Keyset pagination. 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll(int pageSize = 5, int? lastId = null)
         {
             try
             {
-                var customers = await _context.Customers.ToListAsync();
+                if (pageSize < 1) pageSize = 5;
+
+                IQueryable<Customer> query = _context.Customers;
+
+                if (lastId.HasValue)
+                {
+                    query = query.Where(c => c.Id > lastId.Value);
+                }
+
+                //var customers = await _context.Customers.ToListAsync();  // Previous
+                var customers = await query
+                    .OrderBy(c => c.Id)
+                    .Take(pageSize)
+                    .ToListAsync();
 
                 var result = customers.Select(x => new CustomerDto
                 {
@@ -33,7 +48,14 @@ namespace AngularTutorial_API.Controllers
                     Address = x.Address
                 });
 
-                return Ok(result);
+                var nextCursor = customers.LastOrDefault()?.Id;
+
+                //return Ok(result); // Previous
+                return Ok(new
+                {
+                    Data = result,
+                    NextCursor = nextCursor
+                });
             }
             catch (Exception ex)
             {
