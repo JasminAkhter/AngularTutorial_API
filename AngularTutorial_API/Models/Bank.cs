@@ -11,5 +11,7 @@ namespace AngularTutorial_API.Models
         public string AccountNumber { get; set; }
         public string? AccountType { get; set; }
         public string? BankAddress { get; set; }
+
+        public ICollection<Bank> Banks { get; set; }
     }
 }

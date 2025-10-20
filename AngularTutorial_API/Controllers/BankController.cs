@@ -78,15 +78,22 @@ namespace AngularTutorial_API.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
-                Bank entity = new Bank
-                {
-                    BankName = model.BankName,
-                    AccountNumber = model.AccountNumber,
-                    AccountType = model.AccountType,
-                    BankAddress = model.BankAddress
-                };
-
+                Bank entity = new Bank();
+                entity.BankName = model.BankName;
+                entity.AccountNumber = model.AccountNumber;
+                entity.AccountType = model.AccountType;
+                entity.BankAddress = model.BankAddress;
                 await _context.Banks.AddAsync(entity);
+                foreach(var branch in model.Branchs)
+                { 
+                    Branch brachEntity = new Branch();
+                    brachEntity.BankID = entity.BankID;
+                    brachEntity.BranchName = branch.BranchName;
+                    brachEntity.Phone = branch.Phone;
+                    brachEntity.Email = branch.Email;
+                    brachEntity.Address = branch.Address;
+                    await _context.Branches.AddAsync(brachEntity);
+                }
                 await _context.SaveChangesAsync();
 
                 await _context.Database.CommitTransactionAsync();

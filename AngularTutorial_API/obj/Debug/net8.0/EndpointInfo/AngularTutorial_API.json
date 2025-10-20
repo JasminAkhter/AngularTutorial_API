@@ -360,6 +360,57 @@
             "minLength": 0,
             "type": "string",
             "nullable": true
+          },
+          "branchs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BranchDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BranchDto": {
+        "required": [
+          "branchName"
+        ],
+        "type": "object",
+        "properties": {
+          "branchID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "branchName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "phone": {
+            "maxLength": 14,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "bankID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "bankDto": {
+            "$ref": "#/components/schemas/BankDto"
           }
         },
         "additionalProperties": false

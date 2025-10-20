@@ -28,5 +28,7 @@ namespace AngularTutorial_API.DTOs
         [Display(Name = "Bank Address")]
         [StringLength(250, ErrorMessage = "Bank Address cannot exceed 250 characters.")]
         public string? BankAddress { get; set; }
+
+        public ICollection<BranchDto>? Branchs { get; set; } = new List<BranchDto>();
     }
 }
