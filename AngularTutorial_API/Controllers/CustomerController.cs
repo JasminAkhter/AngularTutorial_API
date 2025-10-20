@@ -17,24 +17,35 @@ namespace AngularTutorial_API.Controllers
         }
 
         // There have two types of pagination. Offset pagination and Keyset pagination.
-        // We are doing Keyset pagination. 
+         
         [HttpGet]
-        public async Task<IActionResult> GetAll(int pageSize = 5, int? lastId = null)
+        public async Task<IActionResult> GetAll(int pageNumber = 1, int pageSize = 5, string? search = null)
         {
             try
             {
+                if (pageNumber < 1) pageNumber = 5;
                 if (pageSize < 1) pageSize = 5;
+                
 
                 IQueryable<Customer> query = _context.Customers;
 
-                if (lastId.HasValue)
+                if (!string.IsNullOrEmpty(search))
                 {
-                    query = query.Where(c => c.Id > lastId.Value);
+
+                    search = search.ToLower();
+                    query = query.Where(c => c.Name.ToLower().Contains(search)
+                                          || c.Email.ToLower().Contains(search)
+                                          || c.Phone.Contains(search)
+                                          || c.Gender.ToLower().Contains(search)
+                                          || c.Address.ToLower().Contains(search));
+
                 }
 
-                //var customers = await _context.Customers.ToListAsync();  // Previous
+                int totalCount = await query.CountAsync();
+
                 var customers = await query
                     .OrderBy(c => c.Id)
+                    .Skip((pageNumber - 1) * pageSize)
                     .Take(pageSize)
                     .ToListAsync();
 
@@ -48,13 +59,10 @@ namespace AngularTutorial_API.Controllers
                     Address = x.Address
                 });
 
-                var nextCursor = customers.LastOrDefault()?.Id;
-
-                //return Ok(result); // Previous
                 return Ok(new
                 {
                     Data = result,
-                    NextCursor = nextCursor
+                    TotalCount = totalCount
                 });
             }
             catch (Exception ex)
