@@ -12,6 +12,6 @@ namespace AngularTutorial_API.Models
         public string? AccountType { get; set; }
         public string? BankAddress { get; set; }
 
-        public ICollection<Bank> Banks { get; set; }
+        public ICollection<Branch> Branches { get; set; } = new List<Branch>();
     }
 }

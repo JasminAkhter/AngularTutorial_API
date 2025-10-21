@@ -24,7 +24,7 @@ namespace AngularTutorial_API.DTOs
         [Display(Name = "Address")]
         [StringLength(200, ErrorMessage = "Address cannot be longer than 200 characters.")]
         public string Address { get; set; }
-        public int? BankID { get; set; }
+        public int BankID { get; set; }
         public BankDto? BankDto { get; set; }
     }
 }

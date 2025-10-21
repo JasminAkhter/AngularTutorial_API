@@ -22,7 +22,7 @@ namespace AngularTutorial_API.Controllers
         {
             try
             {
-                var banks = await _context.Banks.ToListAsync();
+                var banks = await _context.Banks.Include(x => x.Branches).ToListAsync();
 
                 var result = banks.Select(x => new BankDto
                 {
@@ -30,8 +30,18 @@ namespace AngularTutorial_API.Controllers
                     BankName = x.BankName,
                     AccountNumber = x.AccountNumber,
                     AccountType = x.AccountType,
-                    BankAddress = x.BankAddress
+                    BankAddress = x.BankAddress,
+                    Branchs = x.Branches.Select(b => new BranchDto
+                    {
+                        BranchID = b.BranchID,
+                        BranchName = b.BranchName,
+                        Phone = b.Phone,
+                        Email = b.Email,
+                        Address = b.Address,
+                        BankID = b.BankID
+                    }).ToList()
                 });
+
                 return Ok(result);
             }
             catch (Exception ex)
@@ -41,12 +51,15 @@ namespace AngularTutorial_API.Controllers
             }
         }
 
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByID(int id)
         {
             try
             {
-                var bank = await _context.Banks.FindAsync(id);
+                var bank = await _context.Banks
+                    .Include(x => x.Branches)
+                    .SingleOrDefaultAsync(x => x.BankID == id);
 
                 if (bank == null)
                     return NotFound(new { Message = "Bank not found." });
@@ -57,7 +70,16 @@ namespace AngularTutorial_API.Controllers
                     BankName = bank.BankName,
                     AccountNumber = bank.AccountNumber,
                     AccountType = bank.AccountType,
-                    BankAddress = bank.BankAddress
+                    BankAddress = bank.BankAddress,
+                    Branchs = bank.Branches.Select(b => new BranchDto
+                    {
+                        BranchID = b.BranchID,
+                        BranchName = b.BranchName,
+                        Phone = b.Phone,
+                        Email = b.Email,
+                        Address = b.Address,
+                        BankID = b.BankID
+                    }). ToList()
                 };
 
                 return Ok(result);
@@ -83,16 +105,21 @@ namespace AngularTutorial_API.Controllers
                 entity.AccountNumber = model.AccountNumber;
                 entity.AccountType = model.AccountType;
                 entity.BankAddress = model.BankAddress;
+
                 await _context.Banks.AddAsync(entity);
-                foreach(var branch in model.Branchs)
+                await _context.SaveChangesAsync();
+
+
+                foreach (var branch in model.Branchs)
                 { 
-                    Branch brachEntity = new Branch();
-                    brachEntity.BankID = entity.BankID;
-                    brachEntity.BranchName = branch.BranchName;
-                    brachEntity.Phone = branch.Phone;
-                    brachEntity.Email = branch.Email;
-                    brachEntity.Address = branch.Address;
-                    await _context.Branches.AddAsync(brachEntity);
+                    Branch branchEntity = new Branch();
+                    branchEntity.BankID = entity.BankID;
+                    branchEntity.BranchName = branch.BranchName;
+                    branchEntity.Phone = branch.Phone;
+                    branchEntity.Email = branch.Email;
+                    branchEntity.Address = branch.Address;
+
+                    await _context.Branches.AddAsync(branchEntity);
                 }
                 await _context.SaveChangesAsync();
 
@@ -117,7 +144,9 @@ namespace AngularTutorial_API.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
-                var existingBank = await _context.Banks.FindAsync(id);
+                var existingBank = await _context.Banks
+                    .Include(b => b.Branches)
+                    .FirstOrDefaultAsync(b => b.BankID == id);
 
                 if (existingBank == null)
                     return NotFound(new { Message = "Bank not found." });
@@ -127,7 +156,35 @@ namespace AngularTutorial_API.Controllers
                 existingBank.AccountType = model.AccountType;
                 existingBank.BankAddress = model.BankAddress;
 
-                _context.Banks.Update(existingBank);
+                if(model.Branchs != null && model.Branchs.Any())
+                { 
+                    foreach (var branchDto in model.Branchs)
+                    {
+                        var existingBranch = existingBank.Branches
+                            .FirstOrDefault(b => b.BranchID == branchDto.BranchID);
+
+                        if (existingBranch != null)
+                        {
+                            existingBranch.BranchName = branchDto.BranchName;
+                            existingBranch.Phone = branchDto.Phone;
+                            existingBranch.Email = branchDto.Email;
+                            existingBranch.Address = branchDto.Address;
+                        }
+                        else
+                        {
+                            var newBranch = new Branch
+                            {
+                                BankID = existingBank.BankID,
+                                BranchName = branchDto.BranchName,
+                                Phone = branchDto.Phone,
+                                Email = branchDto.Email,
+                                Address = branchDto.Address,
+                            };
+                            _context.Branches.Add(newBranch);
+                        }
+                    }
+                }
+
                 await _context.SaveChangesAsync();
                 await _context.Database.CommitTransactionAsync();
 
@@ -147,15 +204,27 @@ namespace AngularTutorial_API.Controllers
             await _context.Database.BeginTransactionAsync();
             try
             {
-                var bank = await _context.Banks.FindAsync(id);
+                var bank = await _context.Banks
+                    .Include(b => b.Branches)
+                    .FirstOrDefaultAsync(b => b.BankID == id);
+
                 if (bank == null)
-                    return NotFound(new { Message = "Bank not found." });
+                    return NotFound(new { Message = "Bank data not found." });
+
+
+                // Delete all branches first
+                if (bank.Branches.Any())
+                {
+                    _context.Branches.RemoveRange(bank.Branches);
+                }
+
+
 
                 _context.Banks.Remove(bank);
                 await _context.SaveChangesAsync();
                 await _context.Database.CommitTransactionAsync();
 
-                return Ok(new { Message = "Bank deleted successfully!" });
+                return Ok(new { Message = "Data deleted successfully!" });
             }
             catch (Exception ex)
             {
