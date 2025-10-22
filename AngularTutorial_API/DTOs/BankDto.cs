@@ -11,11 +11,6 @@ namespace AngularTutorial_API.DTOs
         [StringLength(100, ErrorMessage = "Name cannot be longer than 100 characters.")]
         public string BankName { get; set; }
 
-        //[Display(Name = "Branch Name")]
-        //[Required(ErrorMessage = "Branch Name is required.")]
-        //[StringLength(100, ErrorMessage = "Name cannot be longer than 100 characters.")]
-        //public string BranchName { get; set; }
-
         [Display(Name = "Account Number")]
         [Required(ErrorMessage = "Account Number is required.")]
         [StringLength(50, ErrorMessage = "Account Number cannot be longer than 50 characters.")]

@@ -373,7 +373,8 @@
       },
       "BranchDto": {
         "required": [
-          "branchName"
+          "branchName",
+          "phone"
         ],
         "type": "object",
         "properties": {
@@ -389,8 +390,7 @@
           "phone": {
             "maxLength": 14,
             "minLength": 0,
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "email": {
             "maxLength": 100,
@@ -407,9 +407,6 @@
           "bankID": {
             "type": "integer",
             "format": "int32"
-          },
-          "bankDto": {
-            "$ref": "#/components/schemas/BankDto"
           }
         },
         "additionalProperties": false

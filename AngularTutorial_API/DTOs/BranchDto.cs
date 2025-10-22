@@ -14,17 +14,18 @@ namespace AngularTutorial_API.DTOs
         public string BranchName { get; set; }
 
         [Display(Name = "Phone")]
+        [Required(ErrorMessage = " Phone number is required.")]
         [StringLength(14, ErrorMessage = "Give a valid Phone number")]
         public string Phone { get; set; }
 
         [Display(Name = "Email")]
         [StringLength(100, ErrorMessage = "Give a valid Email number")]
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
         [Display(Name = "Address")]
         [StringLength(200, ErrorMessage = "Address cannot be longer than 200 characters.")]
-        public string Address { get; set; }
-        public int BankID { get; set; }
-        public BankDto? BankDto { get; set; }
+        public string? Address { get; set; }
+        public int BankID { get; set; } 
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace AngularTutorial_API.Models
 {
@@ -12,11 +13,13 @@ namespace AngularTutorial_API.Models
         public string BranchName { get; set; }
 
         public string Phone { get; set; }
-        public string Email { get; set; }
-        public string Address { get; set; }
+        public string? Email { get; set; }
+        public string? Address { get; set; }
 
         [ForeignKey("Bank")]
         public int BankID { get; set; }
+
+        [JsonIgnore]
         public Bank Bank { get; set; }
     }
 }

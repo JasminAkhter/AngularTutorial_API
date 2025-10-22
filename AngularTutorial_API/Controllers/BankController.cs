@@ -180,7 +180,7 @@ namespace AngularTutorial_API.Controllers
                                 Email = branchDto.Email,
                                 Address = branchDto.Address,
                             };
-                            _context.Branches.Add(newBranch);
+                            _context.Branches.Add(newBranch); 
                         }
                     }
                 }
