@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AngularTutorial_API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251022050719_LittleUpdateinBB")]
-    partial class LittleUpdateinBB
+    [Migration("20251023034340_InIt")]
+    partial class InIt
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

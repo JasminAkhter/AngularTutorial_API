@@ -45,7 +45,7 @@ namespace AngularTutorial_API.Migrations
 
                     b.HasKey("BankID");
 
-                    b.ToTable("Banks", (string)null);
+                    b.ToTable("Banks");
                 });
 
             modelBuilder.Entity("AngularTutorial_API.Models.Branch", b =>
@@ -77,7 +77,7 @@ namespace AngularTutorial_API.Migrations
 
                     b.HasIndex("BankID");
 
-                    b.ToTable("Branches", (string)null);
+                    b.ToTable("Branches");
                 });
 
             modelBuilder.Entity("AngularTutorial_API.Models.Customer", b =>
@@ -108,7 +108,7 @@ namespace AngularTutorial_API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customers", (string)null);
+                    b.ToTable("Customers");
                 });
 
             modelBuilder.Entity("AngularTutorial_API.Models.Branch", b =>

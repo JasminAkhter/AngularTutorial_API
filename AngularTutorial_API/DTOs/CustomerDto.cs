@@ -23,3 +23,4 @@ public class CustomerDto
     [StringLength(250, ErrorMessage = "Address cannot exceed 250 characters.")]
     public string? Address { get; set; }
 }
+
